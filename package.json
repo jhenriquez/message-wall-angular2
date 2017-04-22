@@ -1,10 +1,11 @@
 {
   "name": "messages-wall-angular2",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "A angular 2 based web client for the message-wall-api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "build:watch": "webpack --watch"
   },
   "keywords": [
     "Angular2"
@@ -27,6 +28,7 @@
     "dotenv": "^4.0.0",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.3.0",
-    "zone.js": "^0.8.5"
+    "zone.js": "^0.8.5",
+    "messages-wall-api": "git+https://git@github.com/jhenriquez/messages-wall-api.git"
   }
 }

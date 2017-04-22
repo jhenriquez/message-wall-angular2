@@ -1,7 +1,7 @@
  require('dotenv').config();
 
- const server = require('thought_well');
+ const server = require('messages-wall-api');
 
-server.listen(8180, () => {
-  console.log(`listening somewhere.`);
+server.listen(process.env.PORT || 8180, () => {
+  console.log(`listening on :8180`);
 });
